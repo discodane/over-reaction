@@ -62,8 +62,6 @@ class App extends Component {
       return <h1>Hello, {props.name}</h1>;
     }
     const element = <h1>Hello, rendering of a jsx object... World</h1>;
-    const functionalComponent = <Welcome name={"discodane (which was passed in by props)"} />;
-    const otherFunctionalComponent = <Welcome name={'bobo the clown (which was also passed in by props)'} />;
 
     return (
       <div className="App">
@@ -76,8 +74,8 @@ class App extends Component {
           This should be a preview of all react and jsx etc has to offer
         </p>
         {element}
-        {functionalComponent}
-        {otherFunctionalComponent}
+        <Welcome name={"discodane (which was passed in by props)"} />
+        <Welcome name={'bobo the clown (which was also passed in by props)'} />
         <Clock />
         <StaticClock />
       </div>
